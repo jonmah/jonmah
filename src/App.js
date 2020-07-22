@@ -24,9 +24,8 @@ const App = () => {
   return (
     <ThemeProvider theme={theme === 'dark' ? dark : light}>
       <GlobalStyles />
-      <button onClick={toggleTheme}>Toggle theme</button>
       <Container>
-        <Switch handleToggle={() => console.log('flip')} />
+        <Switch handleToggle={toggleTheme} />
       </Container>
     </ThemeProvider>
   )
