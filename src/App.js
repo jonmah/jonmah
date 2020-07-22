@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import { GlobalStyles } from './assets/global'
-import { dark, light } from './assets/themes'
+import themes from './theme'
 import { Switch } from './components'
 
 const Container = styled.div`
@@ -21,8 +21,9 @@ const App = () => {
       setTheme('light')
     }
   }
+
   return (
-    <ThemeProvider theme={theme === 'dark' ? dark : light}>
+    <ThemeProvider theme={theme === 'dark' ? themes.dark : themes.light}>
       <GlobalStyles />
       <Container>
         <Switch handleToggle={toggleTheme} />
