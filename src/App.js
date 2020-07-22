@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from 'styled-components'
 
 import { GlobalStyles } from './assets/global'
 import { dark, light } from './assets/themes'
-import Switch from './components/Switch'
+import { Switch } from './components'
 
 const Container = styled.div`
   background: ${props => props.background};
