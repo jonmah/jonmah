@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
-import { GlobalStyles } from './assets/global'
+import { GlobalStyles } from './theme/global'
 import themes from './theme'
 import { Switch } from './components'
 
