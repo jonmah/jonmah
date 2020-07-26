@@ -1,8 +1,13 @@
-export const blue = '#2a416f'
-export const blueLight = '#72ffff'
-export const green = '#06d6a0'
-export const green1 = '#58fddb'
-export const green2 = '#3efab7'
-export const green3 = '#09f56f'
-export const orange = '#ffa350'
-export const white = '#ffffff'
+const colors = {
+  black: '#000000',
+  blue: '#2a416f',
+  blueLight: '#72ffff',
+  green: '#06d6a0',
+  green1: '#58fddb',
+  green2: '#3efab7',
+  green3: '#09f56f',
+  orange: '#ffa350',
+  white: '#ffffff',
+}
+
+export default colors

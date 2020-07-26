@@ -6,7 +6,6 @@ import themes from './theme'
 import { Switch } from './components'
 
 const Container = styled.div`
-  background: ${props => props.background};
   height: 100%;
   width: 100%;
 `
@@ -27,6 +26,7 @@ const App = () => {
       <GlobalStyles />
       <Container>
         <Switch handleToggle={toggleTheme} />
+        Jon Mah
       </Container>
     </ThemeProvider>
   )

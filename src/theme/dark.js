@@ -1,4 +1,16 @@
-import { blue, white } from './colors'
+import colors from './colors'
+
+const {
+  black,
+  blue,
+  blueLight,
+  green,
+  green1,
+  green2,
+  green3,
+  orange,
+  white,
+} = colors
 
 const dark = {
   background: blue,
@@ -9,6 +21,7 @@ const dark = {
     { key: 'l', margin: '2.5rem' },
     { key: 'xl', margin: '3rem' },
   ],
+  colors,
   typography: {
     color: white,
     fontFamily:
