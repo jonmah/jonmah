@@ -1,4 +1,5 @@
 import React from 'react'
+import uuid from 'react-uuid'
 import styled from 'styled-components'
 
 const Input = styled.input`
@@ -49,18 +50,16 @@ const Button = styled.span`
 `
 Button.displayName = 'SwitchButton'
 
-const Switch = ({ handleToggle, isOn }) => (
-  <>
-    <Input
-      checked={isOn}
-      id="react-switch"
-      onChange={handleToggle}
-      type="checkbox"
-    />
-    <Label htmlFor="react-switch">
-      <Button />
-    </Label>
-  </>
-)
+const Switch = ({ handleToggle, isOn }) => {
+  const id = uuid()
+  return (
+    <>
+      <Input checked={isOn} id={id} onChange={handleToggle} type="checkbox" />
+      <Label htmlFor={id}>
+        <Button />
+      </Label>
+    </>
+  )
+}
 
 export default Switch
