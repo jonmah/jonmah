@@ -22,7 +22,7 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider theme={theme === 'dark' ? themes.dark : themes.light}>
+    <ThemeProvider theme={themes[theme]}>
       <GlobalStyles />
       <Container>
         <Switch handleToggle={toggleTheme} />
