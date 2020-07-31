@@ -1,19 +1,14 @@
 import React, { useState } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyles } from './theme/global'
 import themes from './theme'
-import { Switch } from './components'
-
-const Container = styled.div`
-  height: 100%;
-  width: 100%;
-`
-Container.displayName = 'AppContainer'
+import Header from './Header'
+import { Flex, Page } from './components'
 
 const App = () => {
   const [theme, setTheme] = useState('light')
-  const toggleTheme = () => {
+  const handleSetTheme = () => {
     if (theme === 'light') {
       setTheme('dark')
     } else {
@@ -24,10 +19,35 @@ const App = () => {
   return (
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyles />
-      <Container>
-        <Switch handleToggle={toggleTheme} />
-        Jon Mah
-      </Container>
+      <Header handleSetTheme={handleSetTheme} />
+      <Page>
+        <Flex alignItems="center" justify="flex-end">
+          <div
+            style={{
+              height: '10px',
+              width: '10px',
+              background: 'red',
+              marginRight: '10px',
+            }}
+          ></div>
+          <div
+            style={{
+              height: '10px',
+              width: '10px',
+              background: 'blue',
+              marginRight: '10px',
+            }}
+          ></div>
+          <div
+            style={{
+              height: '10px',
+              width: '10px',
+              background: 'green',
+              marginRight: '10px',
+            }}
+          ></div>
+        </Flex>
+      </Page>
     </ThemeProvider>
   )
 }
