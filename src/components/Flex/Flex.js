@@ -7,5 +7,6 @@ const Flex = styled.div`
   justify-content: ${props => props.justify};
   width: 100%;
 `
+Flex.displayName = 'Flex'
 
 export default Flex

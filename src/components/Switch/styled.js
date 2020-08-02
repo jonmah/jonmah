@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 
 export const Input = styled.input`
-  height: 0;
-  visibility: hidden;
-  width: 0;
+  display: none;
 
   &:checked + label {
     background: ${({ theme }) => theme.colors.green};
@@ -27,7 +25,7 @@ export const Label = styled.label`
   cursor: pointer;
   width: 60px;
   height: 36px;
-  background: ${({ theme }) => theme.colors.orange};
+  background: ${({ theme }) => theme.colors.grey};
   border-radius: 80px;
   position: relative;
   transition: background-color 0.2s;
