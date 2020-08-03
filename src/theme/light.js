@@ -1,16 +1,6 @@
 import colors from './colors'
 
-const {
-  black,
-  blue,
-  blueLight,
-  green,
-  green1,
-  green2,
-  green3,
-  orange,
-  white,
-} = colors
+const { blue, green, white } = colors
 
 const light = {
   background: white,
@@ -22,6 +12,9 @@ const light = {
     { key: 'xl', margin: '3rem' },
   ],
   colors,
+  menu: {
+    hamburger: green,
+  },
   padding: '1rem',
   typography: {
     color: blue,

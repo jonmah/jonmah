@@ -5,7 +5,8 @@ export const Container = styled.div`
   width: 2.5rem;
 
   div {
-    transition: 0.4s;
+    background: ${({ theme }) => theme.menu.hamburger};
+    transition: 0.6s;
   }
 
   > div:first-of-type {
@@ -27,7 +28,6 @@ export const Container = styled.div`
 Container.displayName = 'Container'
 
 export const Bar = styled.div`
-  background: ${({ theme }) => theme.colors.white};
   height: calc(100% / 6);
   margin-bottom: calc(100% / 6);
 `
