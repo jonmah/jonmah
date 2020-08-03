@@ -22,6 +22,7 @@ const light = {
     { key: 'xl', margin: '3rem' },
   ],
   colors,
+  padding: '1rem',
   typography: {
     color: blue,
     fontFamily:

@@ -7,14 +7,12 @@ import { Flex, Switch } from '../components'
 const Header = ({ handleSetTheme }) => (
   <Container>
     <Flex
-      alignItems="center"
+      alignItems="flex-start"
       height="100%"
       justifyContent="space-between"
       width="100%"
     >
-      <div>
-        <Switch handleToggle={handleSetTheme} />
-      </div>
+      <Switch handleToggle={handleSetTheme} />
       <Menu />
     </Flex>
   </Container>

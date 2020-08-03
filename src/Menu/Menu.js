@@ -1,11 +1,14 @@
 import React from 'react'
 
+import { NavContainer } from './styled'
 import { Flex, Hamburger } from '../components'
 
 const Menu = props => (
-  <Flex>
-    <Hamburger />
-  </Flex>
+  <NavContainer>
+    <Flex>
+      <Hamburger />
+    </Flex>
+  </NavContainer>
 )
 
 export default Menu
