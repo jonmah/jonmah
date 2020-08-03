@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import { Container, Bar } from './styled'
 
-const Hamburger = () => {
-  const [isOn, setIsOn] = useState(false)
-
+const Hamburger = ({ isOn, onClick }) => {
   return (
-    <Container isOn={isOn} onClick={() => setIsOn(!isOn)}>
+    <Container isOn={isOn} onClick={onClick}>
       <Bar />
       <Bar />
       <Bar />

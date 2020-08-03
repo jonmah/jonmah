@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from './theme/global'
 import themes from './theme'
 import Header from './Header'
-import { Flex, Page } from './components'
+import { Page } from './components'
 
 const App = () => {
   const [theme, setTheme] = useState('light')
