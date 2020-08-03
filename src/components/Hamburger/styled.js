@@ -11,18 +11,18 @@ export const Container = styled.div`
 
   > div:first-of-type {
     -webkit-transform: ${({ isOn }) =>
-      isOn ? 'rotate(-45deg) translate(-0.75rem, 0.75rem)' : undefined};
+      isOn ? 'rotate(-45deg) translate(-0.43rem,0.75rem)' : undefined};
     transform: ${({ isOn }) =>
-      isOn ? 'rotate(-45deg) translate(-0.75rem, 0.75rem)' : undefined};
+      isOn ? 'rotate(-45deg) translate(-0.43rem,0.75rem)' : undefined};
   }
   > div:nth-of-type(2) {
     opacity: ${({ isOn }) => (isOn ? 0 : 100)};
   }
   div:nth-of-type(3) {
     -webkit-transform: ${({ isOn }) =>
-      isOn ? 'rotate(45deg) translate(-0.4rem,-0.4rem)' : undefined};
+      isOn ? 'rotate(45deg) translate(-0.43rem,-0.73rem)' : undefined};
     transform: ${({ isOn }) =>
-      isOn ? 'rotate(45deg) translate(-0.4rem,-0.4rem)' : undefined};
+      isOn ? 'rotate(45deg) translate(-0.43rem,-0.73rem)' : undefined};
   }
 `
 Container.displayName = 'Container'
