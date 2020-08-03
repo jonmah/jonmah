@@ -3,7 +3,7 @@ import React from 'react'
 import { NavContainer } from './styled'
 import { Flex, Hamburger } from '../components'
 
-const Menu = props => (
+const Nav = props => (
   <NavContainer>
     <Flex>
       <Hamburger />
@@ -11,4 +11,4 @@ const Menu = props => (
   </NavContainer>
 )
 
-export default Menu
+export default Nav
