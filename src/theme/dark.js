@@ -1,6 +1,6 @@
 import colors from './colors'
 
-const { blue, white } = colors
+const { blue, green, white } = colors
 
 const dark = {
   background: blue,
@@ -13,7 +13,7 @@ const dark = {
   ],
   colors,
   menu: {
-    hamburger: white,
+    hamburger: green,
   },
   padding: '1rem',
   typography: {

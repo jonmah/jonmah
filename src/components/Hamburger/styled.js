@@ -20,9 +20,9 @@ export const Container = styled.div`
   }
   div:nth-of-type(3) {
     -webkit-transform: ${({ isOn }) =>
-      isOn ? 'rotate(45deg) translate(-0.45rem,-0.4rem)' : undefined};
+      isOn ? 'rotate(45deg) translate(-0.4rem,-0.4rem)' : undefined};
     transform: ${({ isOn }) =>
-      isOn ? 'rotate(45deg) translate(-0.45rem,-0.4rem)' : undefined};
+      isOn ? 'rotate(45deg) translate(-0.4rem,-0.4rem)' : undefined};
   }
 `
 Container.displayName = 'Container'
