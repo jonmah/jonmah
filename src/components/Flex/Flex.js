@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 const Flex = styled.div`
-  align-items: ${props => props.alignItems};
+  align-items: ${({ alignItems }) => alignItems};
   display: flex;
-  height: 100%;
-  justify-content: ${props => props.justify};
-  width: 100%;
+  height: ${({ height }) => height};
+  justify-content: ${({ justifyContent }) => justifyContent};
+  width: ${({ width }) => width};
 `
 Flex.displayName = 'Flex'
 

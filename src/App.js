@@ -21,7 +21,7 @@ const App = () => {
       <GlobalStyles />
       <Header handleSetTheme={handleSetTheme} />
       <Page>
-        <Flex alignItems="center" justify="flex-end">
+        {/* <Flex alignItems="center" justify="flex-end">
           <div
             style={{
               height: '10px',
@@ -46,7 +46,7 @@ const App = () => {
               marginRight: '10px',
             }}
           ></div>
-        </Flex>
+        </Flex> */}
       </Page>
     </ThemeProvider>
   )
