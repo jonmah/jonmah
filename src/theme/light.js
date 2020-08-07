@@ -1,21 +1,15 @@
-import colors from './colors'
+import common from './common'
 
-const { blue, green, white } = colors
+const { blue, green, white } = common.colors
 
 const light = {
+  ...common,
   background: white,
-  breakpoints: [
-    { key: 'xs', margin: '1rem' },
-    { key: 's', margin: '1rem' },
-    { key: 'm', margin: '2rem' },
-    { key: 'l', margin: '2.5rem' },
-    { key: 'xl', margin: '3rem' },
-  ],
-  colors,
   menu: {
+    background: blue,
+    fontColor: white,
     hamburger: green,
   },
-  padding: '1rem',
   typography: {
     color: blue,
     fontFamily:

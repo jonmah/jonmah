@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 
-import { GlobalStyles } from './theme/global'
 import themes from './theme'
+import { GlobalStyles } from './theme/global'
 import Header from './Header'
 import { Page } from './components'
 
