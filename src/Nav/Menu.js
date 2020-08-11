@@ -1,20 +1,15 @@
 import styled from 'styled-components'
 
 export const Menu = styled.ul`
-  background: ${({ theme }) => theme.colors.white};
-  -webkit-box-shadow: -12px 12px 24px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -12px 12px 24px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: -12px 12px 24px -5px rgba(0, 0, 0, 0.75);
-  color: ${({ theme }) => theme.colors.blue};
-  display: ${({ isOn }) => (isOn ? 'flex' : 'none')};
-  flex-direction: column;
+  background: #333333;
   height: 100%;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
   position: fixed;
-  right: 0;
+  right: ${({ isOn }) => (isOn ? '0' : '-100vw')};
   top: 0;
+  transition: 0.25s ease-out;
   width: 100vw;
 
   li:first-of-type {
