@@ -16,7 +16,7 @@ Input.displayName = 'SwitchInput'
 
 export const Label = styled.label`
   &:active span {
-    width: 3rem;
+    width: 3.5rem;
   }
 
   display: flex;
