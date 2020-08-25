@@ -6,6 +6,10 @@ export const GlobalStyles = createGlobalStyle`
   *::before {
     box-sizing: border-box;
   }
+  
+  html {
+    font-size: 62.5%;
+  }
 
   body {
     align-items: center;

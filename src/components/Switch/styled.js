@@ -23,8 +23,8 @@ export const Label = styled.label`
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  width: 4rem;
-  height: 2.2rem;
+  width: 5rem;
+  height: 3rem;
   background: ${({ theme }) => theme.colors.grey};
   border-radius: 2rem;
   position: relative;
@@ -37,8 +37,8 @@ export const Button = styled.span`
   position: absolute;
   top: 0.1rem;
   left: 0.1rem;
-  width: 2rem;
-  height: 2rem;
+  width: 2.8rem;
+  height: 2.8rem;
   border-radius: 2rem;
   transition: 0.2s;
   background: ${({ theme }) => theme.colors.white};

@@ -41,7 +41,6 @@ export const MenuItem = styled.li`
   display: inline-block;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
-    border-bottom: 1px solid ${({ theme }) => theme.colors.white};
     display: block;
     padding: ${({ theme }) => theme.padding};
   }

@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   cursor: pointer;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: 3rem;
 
   div {
     background: ${({ theme }) => theme.menu.hamburger};
@@ -12,18 +12,18 @@ export const Container = styled.div`
 
   > div:first-of-type {
     -webkit-transform: ${({ isOn }) =>
-      isOn && 'rotate(-45deg) translate(-0.43rem,0.75rem)'};
+      isOn && 'rotate(-45deg) translate(-0.5rem,0.88rem)'};
     transform: ${({ isOn }) =>
-      isOn && 'rotate(-45deg) translate(-0.43rem,0.75rem)'};
+      isOn && 'rotate(-45deg) translate(-0.5rem,0.88rem)'};
   }
   > div:nth-of-type(2) {
     opacity: ${({ isOn }) => (isOn ? 0 : 100)};
   }
   div:nth-of-type(3) {
     -webkit-transform: ${({ isOn }) =>
-      isOn && 'rotate(45deg) translate(-0.43rem,-0.73rem)'};
+      isOn && 'rotate(45deg) translate(-0.56rem,-0.92rem)'};
     transform: ${({ isOn }) =>
-      isOn && 'rotate(45deg) translate(-0.43rem,-0.73rem)'};
+      isOn && 'rotate(45deg) translate(-0.56rem,-0.92rem)'};
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
