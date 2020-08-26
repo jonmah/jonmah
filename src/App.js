@@ -5,7 +5,6 @@ import themes from './theme'
 import { GlobalStyles } from './theme/global'
 import Header from './Header'
 import { Page } from './components'
-import { capitalize } from 'webpack-js-library'
 
 const App = () => {
   const [theme, setTheme] = useState('light')
@@ -17,7 +16,6 @@ const App = () => {
     }
   }
 
-  console.log(capitalize('sdfsdfsdf'))
   return (
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyles />
