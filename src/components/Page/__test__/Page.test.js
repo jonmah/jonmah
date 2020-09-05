@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 
-import Page from './Page'
+import Page from '../Page'
 
 describe('Page component', () => {
   afterEach(cleanup)

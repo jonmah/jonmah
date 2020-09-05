@@ -5,13 +5,13 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
+      <section
         class="sc-AxjAm iijJlp"
       />
     </div>
   </body>,
   "container": <div>
-    <div
+    <section
       class="sc-AxjAm iijJlp"
     />
   </div>,
