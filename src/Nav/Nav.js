@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 
-import { NavContainer } from './styled'
+import { Container } from './styled'
 import { Menu, MenuItem } from './Menu'
 import { Flex, Hamburger } from '../components'
 
 const Nav = props => {
   const [isOn, setIsOn] = useState(false)
   return (
-    <NavContainer>
+    <Container>
       <Flex justifyContent="space-between">
         <Menu isOn={isOn}>
           <MenuItem>Home</MenuItem>
@@ -16,7 +16,7 @@ const Nav = props => {
         </Menu>
         <Hamburger isOn={isOn} onClick={() => setIsOn(!isOn)} />
       </Flex>
-    </NavContainer>
+    </Container>
   )
 }
 
