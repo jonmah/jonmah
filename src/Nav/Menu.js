@@ -25,7 +25,7 @@ export const Menu = styled.ul`
     display: flex;
     flex-direction: row;
     right: 0;
-    width: 100vw;
+    transition: unset;
 
     li:first-of-type {
       margin-top: 0;
@@ -38,7 +38,7 @@ export const MenuItem = styled.li`
   cursor: pointer;
   display: inline-block;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.desktop}) {
     display: block;
     padding: ${({ theme }) => theme.padding};
   }
