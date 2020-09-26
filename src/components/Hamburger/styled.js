@@ -26,7 +26,7 @@ export const Container = styled.div`
       isOn && 'rotate(45deg) translate(-0.56rem,-0.92rem)'};
   }
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     display: none;
   }
 `
