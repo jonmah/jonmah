@@ -7,7 +7,12 @@ const common = {
     tablet: '600px',
   },
   colors,
+  margin: '1rem',
   padding: '1rem',
+  typography: {
+    fontFamily:
+      "BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+  },
 }
 
 export default common

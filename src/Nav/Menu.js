@@ -24,6 +24,7 @@ export const Menu = styled.ul`
     color: ${({ theme }) => theme.typography.color};
     display: flex;
     flex-direction: row;
+    margin-top: ${({ theme }) => theme.margin};
     right: 0;
     transition: unset;
 

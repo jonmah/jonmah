@@ -11,9 +11,8 @@ const dark = {
     hamburger: green,
   },
   typography: {
+    ...common.typography,
     color: white,
-    fontFamily:
-      "BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
   },
 }
 

@@ -11,9 +11,8 @@ const light = {
     hamburger: green,
   },
   typography: {
-    color: blue,
-    fontFamily:
-      "BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+    ...common.typography,
+    color: white,
   },
 }
 
