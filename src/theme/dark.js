@@ -1,13 +1,13 @@
 import common from './common'
 
-const { blue, green, white } = common.colors
+const { blue, blueDark, green, white } = common.colors
 
 const dark = {
   ...common,
   background: blue,
   menu: {
-    background: white,
-    fontColor: blue,
+    background: blueDark,
+    fontColor: white,
     hamburger: green,
   },
   typography: {

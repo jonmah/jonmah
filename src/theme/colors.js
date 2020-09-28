@@ -1,16 +1,13 @@
 const colors = {
   black: '#000000',
   blue: '#2a416f',
-  blueLight: '#72ffff',
-  blueNight: '#001a33',
-  green: '#06d6a0',
-  green1: '#58fddb',
-  green2: '#3efab7',
-  green3: '#09f56f',
+  blueDark: '#0d2340',
+  green: '#44f281',
+  greenDark: '#06d6a0',
   grey: '#dcdcdc',
-  orange: '#ffa350',
+  orange: '#f29f05',
+  orangeDark: '#ffa350',
   white: '#ffffff',
-  yellowSun: '#fafd0f',
 }
 
 export default colors

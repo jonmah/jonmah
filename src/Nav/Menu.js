@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Menu = styled.ul`
-  background: #333333;
+  background: ${({ theme }) => theme.colors.blueDark};
   height: 100%;
   list-style: none;
   margin: 0;
@@ -10,10 +10,14 @@ export const Menu = styled.ul`
   right: ${({ isOn }) => (isOn ? '0' : '-100vw')};
   top: 0;
   transition: 0.25s ease-out;
-  width: 30vw;
+  width: ${({ theme }) => theme.features.menu.mobile};
 
   li:first-of-type {
     margin-top: 4rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: ${({ theme }) => theme.features.menu.tablet};
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {

@@ -7,6 +7,12 @@ const common = {
     tablet: '600px',
   },
   colors,
+  features: {
+    menu: {
+      mobile: '100vw',
+      tablet: '30rem',
+    },
+  },
   margin: '1rem',
   padding: '1rem',
   typography: {
