@@ -1,13 +1,13 @@
 import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 
-import Page from '../Page'
+import Main from '../Main'
 
-describe('Page component', () => {
+describe('Main component', () => {
   afterEach(cleanup)
 
   it('Renders', () => {
-    const wrapper = render(<Page />)
+    const wrapper = render(<Main />)
     expect(wrapper).toMatchSnapshot()
   })
 })

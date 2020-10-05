@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import themes from './theme'
 import { GlobalStyles } from './theme/global'
 import Header from './Header'
-import { Page } from './components'
+import { Main } from './components'
 
 const App = () => {
   const [theme, setTheme] = useState('light')
@@ -20,7 +20,7 @@ const App = () => {
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyles />
       <Header handleSetTheme={handleSetTheme} />
-      <Page backgroundImage="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg">
+      <Main backgroundImage="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg">
         {/* <Flex alignItems="center" justify="flex-end">
           <div
             style={{
@@ -71,7 +71,7 @@ const App = () => {
             }}
           ></div>
         </Flex> */}
-      </Page>
+      </Main>
     </ThemeProvider>
   )
 }

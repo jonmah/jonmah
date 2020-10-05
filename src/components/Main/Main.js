@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Page = styled.section`
+const Main = styled.section`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('${({ backgroundImage }) => backgroundImage}');
   background-position: center;
@@ -10,6 +10,6 @@ const Page = styled.section`
   position: relative;
   width: 100vw;
 `
-Page.displayName = 'Page'
+Main.displayName = 'Main'
 
-export default Page
+export default Main

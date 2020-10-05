@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Page component Renders 1`] = `
+exports[`Main component Renders 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <section
-        class="sc-AxjAm iijJlp"
+        class="sc-AxjAm bOJqwG"
       />
     </div>
   </body>,
   "container": <div>
     <section
-      class="sc-AxjAm iijJlp"
+      class="sc-AxjAm bOJqwG"
     />
   </div>,
   "debug": [Function],
