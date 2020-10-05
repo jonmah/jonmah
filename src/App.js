@@ -20,7 +20,7 @@ const App = () => {
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyles />
       <Header handleSetTheme={handleSetTheme} />
-      <Page>
+      <Page backgroundImage="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg">
         {/* <Flex alignItems="center" justify="flex-end">
           <div
             style={{

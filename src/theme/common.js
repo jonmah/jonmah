@@ -2,9 +2,10 @@ import colors from './colors'
 
 const common = {
   breakpoints: {
-    desktop: '1080px',
+    desktop: '1025px',
+    laptop: '768px',
     mobile: '320px',
-    tablet: '600px',
+    tablet: '481px',
   },
   colors,
   features: {
