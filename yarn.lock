@@ -5821,6 +5821,11 @@ istanbul-reports@^2.2.6:
   dependencies:
     html-escaper "^2.0.0"
 
+jam-icons@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/jam-icons/-/jam-icons-2.0.0.tgz#7036006f867d21d1ab9ad83743eb9b41cafa70a0"
+  integrity sha512-AbfqqvNpRGAsGvKterHUkvt+lVTWMB++lBK29o27WEvi4Ji/KVsABmE+odL5mLDiXU3ZPEKjRvSmcO20u8nIgA==
+
 jest-changed-files@^24.9.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-24.9.0.tgz#08d8c15eb79a7fa3fc98269bc14b451ee82f8039"
