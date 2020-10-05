@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Main = styled.section`
+const Main = styled.main`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('${({ backgroundImage }) => backgroundImage}');
   background-position: center;
