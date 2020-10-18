@@ -20,6 +20,7 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
     padding: 0;
     font-family: ${({ theme }) => theme.typography.fontFamily};
     transition: all 0.25s linear;

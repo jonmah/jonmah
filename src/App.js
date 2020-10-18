@@ -6,6 +6,8 @@ import { GlobalStyles } from './theme/global'
 import Header from './Header'
 import { Main } from './components'
 
+import splash from './static/splash.jpg'
+
 const App = () => {
   const [theme, setTheme] = useState('light')
   const handleSetTheme = () => {
@@ -19,8 +21,8 @@ const App = () => {
   return (
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyles />
-      <Header handleSetTheme={handleSetTheme} />
-      <Main backgroundImage="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg">
+      <Main backgroundImage={splash}>
+        <Header handleSetTheme={handleSetTheme} />
         {/* <Flex alignItems="center" justify="flex-end">
           <div
             style={{

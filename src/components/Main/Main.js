@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Main = styled.main`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('${({ backgroundImage }) => backgroundImage}');
   background-position: center;
   background-repeat: no-repeat;
