@@ -7,6 +7,7 @@ const Container = styled(Flex)`
   box-sizing: border-box;
   overflow: hidden;
   position: ${({ position }) => position};
+  height: 50rem;
   scroll-behavior: smooth;
 
   > * {
@@ -26,10 +27,8 @@ const Carousel = ({ children, gutters, position }) => {
         if (e.type !== 'wheel') return
 
         let delta = (e.deltaY || -e.wheelDelta || e.detail) >> 10 || 1
-        delta = delta * -300
+        delta = delta * -500
         carousel.scrollLeft -= delta
-        // safari needs also this
-        document.body.scrollLeft -= delta
         e.preventDefault()
       }
 
@@ -42,7 +41,12 @@ const Carousel = ({ children, gutters, position }) => {
   })
 
   return (
-    <Container ref={ref} gutters={gutters} position={position}>
+    <Container
+      alignItems="center"
+      gutters={gutters}
+      position={position}
+      ref={ref}
+    >
       {children}
     </Container>
   )

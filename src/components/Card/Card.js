@@ -8,6 +8,12 @@ const Container = styled(Flex)`
   border-radius: ${({ theme }) => theme.borderRadius};
   height: 20rem;
   min-width: 12rem;
+  transition: all 0.1s linear;
+
+  :hover {
+    height: 24rem;
+    min-width: 15rem;
+  }
 `
 
 const Card = () => {

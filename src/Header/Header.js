@@ -13,7 +13,7 @@ const Header = ({ handleSetTheme }) => (
       width="100%"
     >
       <Switch handleToggle={handleSetTheme} />
-      <Nav />
+      {/* <Nav /> */}
     </Flex>
   </Container>
 )
