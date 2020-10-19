@@ -1,8 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
-import uuid from 'react-uuid'
 
-import Card from '../Card'
 import Flex from '../Flex'
 
 const Container = styled(Flex)`
@@ -18,10 +16,10 @@ const Container = styled(Flex)`
 `
 
 const Carousel = ({ children, gutters, position }) => {
-  const [current, setCurrent] = useState(0)
+  // const [current, setCurrent] = useState(0)
   const ref = useRef()
   useEffect(() => {
-    const carousel = ref && ref.current ? ref.current : null
+    const carousel = ref?.current
 
     if (carousel) {
       const onWheelScroll = e => {
