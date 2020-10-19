@@ -9,6 +9,7 @@ const Container = styled(Flex)`
   box-sizing: border-box;
   overflow: hidden;
   position: ${({ position }) => position};
+  scroll-behavior: smooth;
 
   > * {
     display: inline-block;
