@@ -1,3 +1,5 @@
+export { default as Card } from './Card'
+export { default as Carousel } from './Carousel'
 export { default as Flex } from './Flex'
 export { default as Hamburger } from './Hamburger'
 export { default as Main } from './Main'

@@ -1,6 +1,7 @@
 import colors from './colors'
 
 const common = {
+  borderRadius: '0.5rem',
   breakpoints: {
     desktop: '1025px',
     laptop: '768px',
