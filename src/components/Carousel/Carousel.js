@@ -6,17 +6,21 @@ import Flex from '../Flex'
 const Container = styled(Flex)`
   box-sizing: border-box;
   overflow: hidden;
-  position: ${({ position }) => position};
-  height: 50rem;
+  height: ${({ height }) => height};
   scroll-behavior: smooth;
+
+  padding: 0 ${({ theme }) => theme.padding};
 
   > * {
     display: inline-block;
     margin-right: ${({ gutters }) => gutters};
   }
+  > *:last-child {
+    margin-right: 5rem;
+  }
 `
 
-const Carousel = ({ children, gutters, position }) => {
+const Carousel = ({ children, gutters, height, position }) => {
   // const [current, setCurrent] = useState(0)
   const ref = useRef()
   useEffect(() => {
@@ -44,6 +48,7 @@ const Carousel = ({ children, gutters, position }) => {
     <Container
       alignItems="center"
       gutters={gutters}
+      height={height}
       position={position}
       ref={ref}
     >

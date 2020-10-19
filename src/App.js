@@ -24,7 +24,7 @@ const App = () => {
       <GlobalStyles />
       <Main backgroundImage={splash}>
         <Header handleSetTheme={handleSetTheme} />
-        <Carousel gutters="1.5rem">
+        <Carousel height="30rem" gutters="1.5rem">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map(
             x => (
               <Card key={uuid()} />
