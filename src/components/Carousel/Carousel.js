@@ -7,7 +7,9 @@ const Container = styled(Flex)`
   box-sizing: border-box;
   overflow: hidden;
   height: ${({ height }) => height};
+  position: relative;
   scroll-behavior: smooth;
+  top: ${({ top }) => top};
 
   padding: 0 ${({ theme }) => theme.padding};
 
@@ -20,7 +22,7 @@ const Container = styled(Flex)`
   }
 `
 
-const Carousel = ({ children, gutters, height, position }) => {
+const Carousel = ({ children, gutters, height, position, top }) => {
   // const [current, setCurrent] = useState(0)
   const ref = useRef()
   useEffect(() => {
@@ -50,6 +52,7 @@ const Carousel = ({ children, gutters, height, position }) => {
       gutters={gutters}
       height={height}
       position={position}
+      top={top}
       ref={ref}
     >
       {children}
