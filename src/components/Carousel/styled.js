@@ -14,7 +14,7 @@ export const Container = styled(Flex)`
 
   > * {
     display: inline-block;
-    margin-right: ${({ gutters }) => gutters};
+    margin-right: ${({ gutters }) => gutters && `${gutters}rem`};
   }
   > *:last-child {
     margin-right: 5rem;

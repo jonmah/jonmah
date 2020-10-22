@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Nav from '../Nav'
 import ProfileNav from '../ProfileNav'
 import { Container } from './styled'
 import { Flex, Switch } from '../components'
@@ -14,7 +13,6 @@ const Header = ({ handleSetTheme }) => (
       width="100%"
     >
       <Switch handleToggle={handleSetTheme} />
-      {/* <Nav /> */}
       <ProfileNav />
     </Flex>
   </Container>

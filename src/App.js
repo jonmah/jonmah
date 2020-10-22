@@ -26,7 +26,7 @@ const App = () => {
       <Main backgroundImage={background}>
         <Header handleSetTheme={handleSetTheme} />
         <Carousel
-          gutters="1.5rem"
+          gutters={1.5}
           height={themes[theme].features.card.heightHover}
         >
           {testData.map(({ id, splash }) => (
