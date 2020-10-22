@@ -9,7 +9,10 @@ const Flex = styled.div`
   width: ${({ width }) => width};
 
   > * {
-    ${({ flexDirection, gutters }) => ['column', 'column-inverse'].includes(flexDirection) ? `margin-bottom: ${gutters}rem;` : `margin-right: ${gutters}rem;` }
+    ${({ flexDirection, gutters }) =>
+      ['column', 'column-inverse'].includes(flexDirection)
+        ? `margin-bottom: ${gutters}rem;`
+        : `margin-right: ${gutters}rem;`}
   }
 `
 Flex.displayName = 'Flex'

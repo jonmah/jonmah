@@ -20,31 +20,34 @@ const Icon = ({
     }
   }, [type, className])
 
-  return cloneElement(
-    IconComponent,
-    {
-      className,
-      color,
-      handleClick,
-      handleMouseOver,
-      height,
-      width,
-      'data-type': 'icon'
-    }
-  )
+  return cloneElement(IconComponent, {
+    className,
+    color,
+    handleClick,
+    handleMouseOver,
+    height,
+    width,
+    'data-type': 'icon',
+  })
 }
 
 Icon.defaultProps = {
   width: 16,
-  height: 16
+  height: 16,
 }
 
 const iconStyles = ({ width, height, theme, color }) => `
   ${!isNaN(width) ? `width: ${width}px;` : ''}
   ${!isNaN(height) ? `height: ${height}px;` : ''}
-  ${color ? `> * { 
+  ${
+    color
+      ? `> * { 
     fill: ${theme.colors.global[color] || theme.colors.primary[color] || color} 
-  }` : ''};
+  }`
+      : ''
+  };
 `
 
-export default styled(Icon)`${iconStyles}`
+export default styled(Icon)`
+  ${iconStyles}
+`
