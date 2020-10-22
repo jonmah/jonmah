@@ -7,6 +7,10 @@ const Flex = styled.div`
   height: ${({ height }) => height};
   justify-content: ${({ justifyContent }) => justifyContent};
   width: ${({ width }) => width};
+
+  > * {
+    ${({ flexDirection, gutters }) => ['column', 'column-inverse'].includes(flexDirection) ? `margin-bottom: ${gutters}rem;` : `margin-right: ${gutters}rem;` }
+  }
 `
 Flex.displayName = 'Flex'
 

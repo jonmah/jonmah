@@ -1,28 +1,8 @@
 import React, { useEffect, useRef } from 'react'
-import styled from 'styled-components'
 
-import Flex from '../Flex'
+import { Container } from './styled'
 
-const Container = styled(Flex)`
-  box-sizing: border-box;
-  overflow: hidden;
-  height: ${({ height }) => height};
-  position: relative;
-  scroll-behavior: smooth;
-  top: ${({ top }) => top};
-
-  padding: 0 ${({ theme }) => theme.padding};
-
-  > * {
-    display: inline-block;
-    margin-right: ${({ gutters }) => gutters};
-  }
-  > *:last-child {
-    margin-right: 5rem;
-  }
-`
-
-const Carousel = ({ children, gutters, height, position, top }) => {
+const Carousel = ({ children, gutters, height }) => {
   // const [current, setCurrent] = useState(0)
   const ref = useRef()
   useEffect(() => {
@@ -33,7 +13,7 @@ const Carousel = ({ children, gutters, height, position, top }) => {
         if (e.type !== 'wheel') return
 
         let delta = (e.deltaY || -e.wheelDelta || e.detail) >> 10 || 1
-        delta = delta * -500
+        delta = delta * -150
         carousel.scrollLeft -= delta
         e.preventDefault()
       }
@@ -51,8 +31,6 @@ const Carousel = ({ children, gutters, height, position, top }) => {
       alignItems="center"
       gutters={gutters}
       height={height}
-      position={position}
-      top={top}
       ref={ref}
     >
       {children}

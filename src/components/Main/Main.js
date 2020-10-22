@@ -8,6 +8,7 @@ const Main = styled.main`
   background-size: cover;
   height: 100vh;
   position: relative;
+  transition: all 0.5s linear;
   width: 100vw;
 `
 Main.displayName = 'Main'

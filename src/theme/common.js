@@ -10,6 +10,12 @@ const common = {
   },
   colors,
   features: {
+    card: {
+      height: '25vh',
+      heightHover: '30vh',
+      width: '17vh',
+      widthHover: '20vh',
+    },
     menu: {
       mobile: '100vw',
       tablet: '30rem',
