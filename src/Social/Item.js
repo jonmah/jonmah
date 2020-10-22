@@ -2,10 +2,10 @@ import React from 'react'
 
 import { Flex } from '../components'
 
-const NavItem = ({ children }) => (
+const Item = ({ children }) => (
   <Flex alignItems="center" flexDirection="row" gutters={0.5}>
     {children}
   </Flex>
 )
 
-export default NavItem
+export default Item

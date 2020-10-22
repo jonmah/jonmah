@@ -1,19 +1,19 @@
 import React from 'react'
 
 import { Container } from './styled'
-import NavItem from './NavItem'
+import Item from './Item'
 import avatar from '../static/avatar.jpg'
 import { Avatar, Flex } from '../components'
 
-const ProfileNav = () => (
+const Social = () => (
   <Container>
-    <NavItem>
+    <Item>
       <Avatar backgroundImage={avatar} diameter={3.5} />
       <Flex flexDirection="row" height="100%" justify="flex-start">
         Jonathan Mah
       </Flex>
-    </NavItem>
+    </Item>
   </Container>
 )
 
-export default ProfileNav
+export default Social
