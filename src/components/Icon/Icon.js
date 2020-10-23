@@ -4,27 +4,26 @@ import styled from 'styled-components'
 const Icon = ({
   className,
   color,
-  handleClick,
-  handleMouseOver,
+  onClick,
+  onMouseDown,
   height,
-  type,
+  type: Type,
   width,
 }) => {
   const [IconComponent, setIconComponent] = useState(<svg {...{ className }} />)
   useEffect(() => {
     try {
-      const { ReactComponent } = require(`../../static/icons/${type}.svg`)
-      setIconComponent(<ReactComponent />)
+      setIconComponent(<Type />)
     } catch (err) {
       setIconComponent(<svg {...{ className }} />)
     }
-  }, [type, className])
+  }, [Type, className])
 
   return cloneElement(IconComponent, {
     className,
     color,
-    handleClick,
-    handleMouseOver,
+    onClick,
+    onMouseDown,
     height,
     width,
     'data-type': 'icon',
