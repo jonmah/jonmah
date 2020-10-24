@@ -9,10 +9,10 @@ const Header = ({ handleSetTheme }) => (
     <Flex
       alignItems="flex-start"
       height="100%"
-      justifyContent="space-between"
+      justifyContent="flex-end"
       width="100%"
     >
-      <Switch handleToggle={handleSetTheme} />
+      {/* <Switch handleToggle={handleSetTheme} /> */}
       <Social />
     </Flex>
   </Container>

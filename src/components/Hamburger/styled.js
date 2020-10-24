@@ -14,14 +14,12 @@ export const Container = styled.div`
   }
 
   > div:first-of-type {
-    -webkit-transform: ${({ isOn }) => isOn && topBarRotate};
     transform: ${({ isOn }) => isOn && topBarRotate};
   }
   > div:nth-of-type(2) {
     opacity: ${({ isOn }) => (isOn ? 0 : 100)};
   }
   div:nth-of-type(3) {
-    -webkit-transform: ${({ isOn }) => isOn && bottomBarRotate};
     transform: ${({ isOn }) => isOn && bottomBarRotate};
   }
 

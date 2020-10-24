@@ -18,7 +18,7 @@ const Social = () => (
       <Icon height={20} type={FileText} width={20} />
     </Item>
     <Item>
-      <Avatar backgroundImage={avatar} diameter={3.5} />
+      <Avatar backgroundImage={avatar} />
       <Flex flexDirection="row" height="100%" justify="flex-start">
         Jonathan Mah
       </Flex>

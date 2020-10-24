@@ -4,13 +4,11 @@ import Flex from '../Flex'
 
 export const Container = styled(Flex)`
   box-sizing: border-box;
-  overflow: hidden;
   height: ${({ height }) => height};
+  overflow: scroll;
   position: relative;
   scroll-behavior: smooth;
   top: 35vh;
-
-  padding: 0 ${({ theme }) => theme.padding};
 
   > * {
     display: inline-block;
@@ -21,6 +19,7 @@ export const Container = styled(Flex)`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.laptop}) {
+    overflow: hidden;
     top: 60vh;
   }
 `
