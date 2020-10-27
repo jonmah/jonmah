@@ -13,7 +13,7 @@ const Carousel = ({ children, gutters, height }) => {
         if (e.type !== 'wheel') return
 
         let delta = (e.deltaY || -e.wheelDelta || e.detail) >> 10 || 1
-        delta = delta * -150
+        delta = delta * -300
         carousel.scrollLeft -= delta
         e.preventDefault()
       }
@@ -27,12 +27,7 @@ const Carousel = ({ children, gutters, height }) => {
   })
 
   return (
-    <Container
-      alignItems="center"
-      gutters={gutters}
-      height={height}
-      ref={ref}
-    >
+    <Container alignItems="center" gutters={gutters} height={height} ref={ref}>
       {children}
     </Container>
   )

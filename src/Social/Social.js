@@ -19,9 +19,9 @@ const Social = () => (
     </Item>
     <Item>
       <Avatar backgroundImage={avatar} />
-      <Flex flexDirection="row" height="100%" justify="flex-start">
+      {/* <Flex flexDirection="row" height="100%" justify="flex-start">
         Jonathan Mah
-      </Flex>
+      </Flex> */}
     </Item>
   </Container>
 )

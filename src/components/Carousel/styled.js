@@ -19,6 +19,7 @@ export const Container = styled(Flex)`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.laptop}) {
+    padding-left: 10vw;
     overflow: hidden;
     top: 60vh;
   }

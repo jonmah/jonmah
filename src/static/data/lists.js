@@ -16,43 +16,35 @@ export const testData = [
   },
   {
     id: 2,
-    splash:
-      'https://images.pexels.com/photos/878979/pexels-photo-878979.jpeg',
+    splash: 'https://images.pexels.com/photos/878979/pexels-photo-878979.jpeg',
   },
   {
     id: 3,
-    splash:
-      'https://images.pexels.com/photos/428429/pexels-photo-428429.jpeg',
+    splash: 'https://i.redd.it/73cwj0mhtys51.png',
   },
   {
     id: 4,
-    splash:
-      'https://images.pexels.com/photos/461763/pexels-photo-461763.jpeg',
+    splash: 'https://i.redd.it/q8ddeqzx6aq51.png',
   },
   {
     id: 5,
-    splash:
-      'https://images.pexels.com/photos/434348/pexels-photo-434348.jpeg',
+    splash: 'https://i.redd.it/womaxphxwjt51.png',
   },
   {
     id: 6,
-    splash:
-      'https://images.pexels.com/photos/1878795/pexels-photo-1878795.jpeg',
+    splash: 'https://i.imgur.com/nA5sI5v.jpg',
   },
   {
     id: 7,
-    splash:
-      'https://images.pexels.com/photos/976853/pexels-photo-976853.jpeg',
+    splash: 'https://i.redd.it/idg04l0tl1p51.jpg',
   },
   {
     id: 8,
-    splash:
-      'https://images.pexels.com/photos/2768770/pexels-photo-2768770.jpeg',
+    splash: 'https://i.redd.it/mmfguwqm70p51.png',
   },
   {
     id: 9,
-    splash:
-      'https://images.pexels.com/photos/1797090/pexels-photo-1797090.jpeg',
+    splash: 'https://i.redd.it/452yhie6egr51.png',
   },
   {
     id: 10,
