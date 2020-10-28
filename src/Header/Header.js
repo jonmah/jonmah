@@ -2,7 +2,7 @@ import React from 'react'
 
 import Social from '../Social'
 import { Container } from './styled'
-import { Flex, Switch } from '../components'
+import { Flex } from '../components'
 
 const Header = ({ handleSetTheme }) => (
   <Container>

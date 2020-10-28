@@ -3,7 +3,7 @@ import React from 'react'
 import { Container } from './styled'
 import Item from './Item'
 import avatar from '../static/avatar.jpg'
-import { Avatar, Flex, Icon } from '../components'
+import { Avatar, Icon } from '../components'
 import { FileText, GitHub, LinkedIn } from '../static/icons'
 
 const Social = () => (
