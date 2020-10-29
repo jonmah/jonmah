@@ -36,7 +36,7 @@ const animation = box =>
 
 export const Container = styled.div`
   box-sizing: border-box;
-  color: #64d6e2;
+  color: ${({ theme }) => theme.colors.green};
   display: block;
   font-size: 0;
   height: 96px;

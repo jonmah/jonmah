@@ -25,6 +25,7 @@ const App = () => {
       <GlobalStyles />
       <Main backgroundImage={background}>
         <Header handleSetTheme={handleSetTheme} />
+
         <Carousel
           gutters={1.5}
           height={themes[theme].features.card.heightHover}
