@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { Container } from './styled'
+import { Container } from './Nav.styled'
 import { Menu, MenuItem } from './Menu'
 import { Flex, Hamburger } from '../components'
 

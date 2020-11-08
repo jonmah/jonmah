@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container } from './styled'
+import { Container } from './Card.styled'
 
 const Card = ({ children, handleClick, handleMouseover, splash }) => {
   return (

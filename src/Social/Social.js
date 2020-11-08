@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container } from './styled'
+import { Container } from './Social.styled'
 import Item from './Item'
 import avatar from '../static/avatar.jpg'
 import { Avatar, Icon } from '../components'

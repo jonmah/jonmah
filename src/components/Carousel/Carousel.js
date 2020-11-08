@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 
-import { Container } from './styled'
+import { Container } from './Carousel.styled'
 
 const Carousel = ({ children, gutters, height }) => {
   // const [current, setCurrent] = useState(0)

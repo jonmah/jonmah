@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 
 import themes from './theme'
@@ -20,6 +20,21 @@ const App = () => {
     }
   }
 
+  const cards = useMemo(
+    () =>
+      testData.map(({ id, splash }) => (
+        <Card
+          splash={splash}
+          handleClick={() => setBackground(splash)}
+          handleMouseover={() => setBackground(splash)}
+          key={id}
+        >
+          {id}
+        </Card>
+      )),
+    []
+  )
+
   return (
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyles />
@@ -30,16 +45,7 @@ const App = () => {
           gutters={1.5}
           height={themes[theme].features.card.heightHover}
         >
-          {testData.map(({ id, splash }) => (
-            <Card
-              splash={splash}
-              handleClick={() => setBackground(splash)}
-              handleMouseover={() => setBackground(splash)}
-              key={id}
-            >
-              {id}
-            </Card>
-          ))}
+          {cards}
         </Carousel>
         {/* <Flex alignItems="center" justify="flex-end">
           <div

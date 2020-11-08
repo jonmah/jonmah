@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, Bar } from './styled'
+import { Container, Bar } from './Hamburger.styled'
 
 const Hamburger = ({ isOn, onClick }) => {
   return (

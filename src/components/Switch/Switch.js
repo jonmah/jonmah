@@ -1,7 +1,7 @@
 import React from 'react'
 import uuid from 'react-uuid'
 
-import { Button, Input, Label } from './styled'
+import { Button, Input, Label } from './Switch.styled'
 
 const Switch = ({ handleToggle, isOn }) => {
   const id = uuid()
