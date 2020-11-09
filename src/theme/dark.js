@@ -13,6 +13,8 @@ const dark = {
   typography: {
     ...common.typography,
     color: white,
+    link: green,
+    linkVisited: white,
   },
 }
 

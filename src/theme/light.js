@@ -13,6 +13,8 @@ const light = {
   typography: {
     ...common.typography,
     color: white,
+    link: blue,
+    linkVisited: white,
   },
 }
 

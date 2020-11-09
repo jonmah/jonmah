@@ -1,6 +1,7 @@
 export { default as Avatar } from './Avatar'
 export { default as Card } from './Card'
 export { default as Carousel } from './Carousel'
+export { default as ExternalLink } from './ExternalLink'
 export { default as Flex } from './Flex'
 export { default as Hamburger } from './Hamburger'
 export { default as Icon } from './Icon'
