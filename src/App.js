@@ -1,13 +1,13 @@
-import React, { useMemo, useState } from 'react'
+import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 
 import themes from './theme'
 import { GlobalStyles } from './theme/global'
 import Header from './Header'
-import { Main, Card, Carousel } from './components'
+import Timeline from './Timeline'
+import { Main } from './components'
 
 import splash from './static/splash.jpg'
-import { testData } from './static/data/lists'
 
 const App = () => {
   const [theme, setTheme] = useState('light')
@@ -20,33 +20,15 @@ const App = () => {
     }
   }
 
-  const cards = useMemo(
-    () =>
-      testData.map(({ id, splash }) => (
-        <Card
-          splash={splash}
-          handleClick={() => setBackground(splash)}
-          handleMouseover={() => setBackground(splash)}
-          key={id}
-        >
-          {id}
-        </Card>
-      )),
-    []
-  )
-
   return (
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyles />
       <Main backgroundImage={background}>
         <Header handleSetTheme={handleSetTheme} />
-
-        <Carousel
-          gutters={1.5}
+        <Timeline
+          handleClick={setBackground}
           height={themes[theme].features.card.heightHover}
-        >
-          {cards}
-        </Carousel>
+        />
         {/* <Flex alignItems="center" justify="flex-end">
           <div
             style={{
