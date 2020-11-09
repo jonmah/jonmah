@@ -9,19 +9,20 @@ const Carousel = ({ children, gutters, height }) => {
     const carousel = ref?.current
 
     if (carousel) {
-      const onWheelScroll = e => {
+      const handleScroll = e => {
         if (e.type !== 'wheel') return
 
-        let delta = (e.deltaY || -e.wheelDelta || e.detail) >> 10 || 1
+        let delta =
+          (e.deltaX || e.deltaY || -e.wheelDelta || e.detail) >> 10 || 1
+        console.log(`X: ${e.deltaX}, Y: ${e.deltaY}, Wheel: ${e.wheelDelta}`)
         delta = delta * -300
         carousel.scrollLeft -= delta
         e.preventDefault()
       }
 
-      carousel.addEventListener('wheel', onWheelScroll)
-
+      carousel.addEventListener('wheel', handleScroll)
       return () => {
-        carousel.removeEventListener('wheel', onWheelScroll)
+        carousel.removeEventListener('wheel', handleScroll)
       }
     }
   })
