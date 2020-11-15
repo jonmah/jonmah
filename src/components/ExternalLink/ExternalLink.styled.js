@@ -3,15 +3,9 @@ import styled from 'styled-components'
 export const Container = styled.a.attrs(({ dataType }) => ({
   'data-type': `${dataType ? dataType + '-' : ''}external-link`,
 }))`
-  ${({ backgroundColor, theme }) => `
-    ${
-      backgroundColor &&
-      `background-color: ${backgroundColor};
-      color: ${theme.typography.link};`
-    }
-  `}
-  text-decoration: none;
   box-sizing: border-box;
+  color: ${({ theme }) => theme.typography.link};
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;

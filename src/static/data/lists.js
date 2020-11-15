@@ -11,6 +11,10 @@ export const workHistory = [
 
 export const testData = [
   {
+    id: 0,
+    splash: 'https://i.imgur.com/nA5sI5v.jpg',
+  },
+  {
     id: 1,
     splash: splash,
   },

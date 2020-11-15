@@ -11,7 +11,9 @@ import splash from './static/splash.jpg'
 
 const App = () => {
   const [theme, setTheme] = useState('light')
-  const [background, setBackground] = useState(splash)
+  const [background, setBackground] = useState(
+    'https://i.imgur.com/nA5sI5v.jpg'
+  )
   const handleSetTheme = () => {
     if (theme === 'light') {
       setTheme('dark')
