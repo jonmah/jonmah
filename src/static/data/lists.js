@@ -1,4 +1,60 @@
+import React from 'react'
 import splash from '../splash.jpg'
+
+import { Flex } from '../../components'
+
+export const garbage = (
+  <Flex alignItems="center" justify="flex-end">
+    <div
+      style={{
+        height: '100px',
+        width: '100px',
+        background: '#0D2340',
+        marginRight: '10px',
+      }}
+    ></div>
+    <div
+      style={{
+        height: '100px',
+        width: '100px',
+        background: '#2a416f',
+        marginRight: '10px',
+      }}
+    ></div>
+    <div
+      style={{
+        height: '100px',
+        width: '100px',
+        background: '#44F281',
+        marginRight: '10px',
+      }}
+    ></div>
+    <div
+      style={{
+        height: '100px',
+        width: '100px',
+        background: '#06d6a0',
+        marginRight: '10px',
+      }}
+    ></div>
+    <div
+      style={{
+        height: '100px',
+        width: '100px',
+        background: '#F29F05',
+        marginRight: '10px',
+      }}
+    ></div>
+    <div
+      style={{
+        height: '100px',
+        width: '100px',
+        background: '#ffa350',
+        marginRight: '10px',
+      }}
+    ></div>
+  </Flex>
+)
 
 export const workHistory = [
   {
