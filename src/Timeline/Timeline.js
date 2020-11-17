@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 
-import { testData } from '../static/data/lists'
+import { testData } from '../static/data'
 import { Card, Carousel } from '../components'
 
 const Timeline = ({ handleClick, height }) => {
