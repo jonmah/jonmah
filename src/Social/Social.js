@@ -1,4 +1,5 @@
 import React from 'react'
+import uuid from 'react-uuid'
 
 import { Container, Item } from './Social.styled'
 import { Avatar, ExternalLink, Icon } from '../components'
@@ -6,7 +7,7 @@ import { social } from '../static/data'
 import avatar from '../static/avatar.jpg'
 
 const socialIcons = social.map(({ href, icon }) => (
-  <Item alignItems="center" flexDirection="row" gutters={0.5}>
+  <Item alignItems="center" flexDirection="row" gutters={0.5} key={uuid()}>
     <ExternalLink href={href} target="_blank">
       <Icon height={20} type={icon} width={20} />
     </ExternalLink>
