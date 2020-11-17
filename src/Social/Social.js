@@ -1,9 +1,9 @@
 import React from 'react'
 
 import { Container, Item } from './Social.styled'
-import avatar from '../static/avatar.jpg'
 import { Avatar, ExternalLink, Icon } from '../components'
 import { social } from '../static/data'
+import avatar from '../static/avatar.jpg'
 
 const socialIcons = social.map(({ href, icon }) => (
   <Item alignItems="center" flexDirection="row" gutters={0.5}>
