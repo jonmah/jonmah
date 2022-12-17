@@ -1,14 +1,16 @@
 {
   "name": "jonmah",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Jonathan Mah's Personal Website",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "next build",
+    "dev": "next dev -H 0.0.0.0",
+    "lint": "next lint",
+    "prettier": "pretter -write ."
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jonathan Mah <jon@jonmah.com>",
+  "license": "MIT",
   "dependencies": {
     "next": "^13.0.7",
     "react": "^18.2.0",
