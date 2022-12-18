@@ -6,7 +6,7 @@
     "build": "next build",
     "dev": "next dev -H 0.0.0.0",
     "lint": "next lint",
-    "prettier": "pretter -write ."
+    "prettier": "prettier -write ."
   },
   "keywords": [],
   "author": "Jonathan Mah <jon@jonmah.com>",
