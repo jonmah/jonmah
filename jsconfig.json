@@ -2,9 +2,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["lib/components/*"],
       "@components": ["lib/components"],
-      "@lib/*": ["lib/*"]
+      "@components/*": ["lib/components/*"],
+      "@lib/*": ["lib/*"],
+      "@stitches": ["lib/stitches/stitches.config"],
+      "@stitches/*": ["lib/stitches/*"],
+      "@sass": ["lib/sass"],
+      "@sass/*": ["lib/sass/*"]
     }
   }
 }
