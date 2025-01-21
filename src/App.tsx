@@ -12,7 +12,7 @@ export default function App() {
   }
 
   return (
-    <div className="content" data-theme="dark">
+    <div className="content" data-theme={isDarkMode ? 'dark' : 'light'}>
       <h1>Rsbuild with React</h1>
       <Toggle handleToggle={handleIsDarkModeToggle} isOn={isDarkMode} testIdPrefix="App-theme"/>
       <p>Start building amazing things with Rsbuild.</p>
