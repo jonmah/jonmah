@@ -10,6 +10,7 @@ export default function Toggle({
   handleToggle,
   isOn,
   testIdPrefix,
+  ...otherProps
 }: ToggleProps) {
   const id = crypto.randomUUID();
 
@@ -22,6 +23,7 @@ export default function Toggle({
         onChange={handleToggle}
         data-testid={`${testIdPrefix}-toggle`}
         type="checkbox"
+        {...otherProps}
       />
       <label htmlFor={id} className={styles.toggleLabel}>
         <span className={styles.toggleHandler}></span>

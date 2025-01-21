@@ -1,0 +1,13 @@
+:root {
+  /* body{
+    --blue-color: #6F00FF;
+  } */
+  [data-theme="dark"] {
+    --blue-color: #6F00FF;
+  }
+  
+  /* Set the light mode variables... */
+  [data-theme="light"] {
+    --blue-color: white;
+  }
+}
