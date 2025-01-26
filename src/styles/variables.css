@@ -1,17 +1,12 @@
 :root {
-  /* body{
-    --blue-color: #6F00FF;
-  } */
-  [data-theme="dark"] {
-    --background-color: #333;
-
-    --blue-color: #6F00FF;
-  }
-  
-  /* Set the light mode variables... */
-  [data-theme="light"] {
+  --font-color: black;
+  [data-theme='dark'] {
+    --background-color: var(--darktheme-background-color);
+    /* --background-color: var(var(--background-color)); */
+    --blue-color: #6f00ff;
+  } /* Set the light mode variables... */
+  [data-theme='light'] {
     --background-color: #fff;
-
     --blue-color: white;
   }
 }
