@@ -17,6 +17,7 @@
     --background-color: var(--black);
     --font-body-color: var(--white);
   }
+
   [data-theme='light'] {
     --background-color: var(--white);
     --font-body-color: var(--black);
