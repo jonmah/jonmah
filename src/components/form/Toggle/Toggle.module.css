@@ -1,48 +1,48 @@
 .toggleInput {
-  display: none;
+	display: none;
 }
 
 .toggleLabel {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  width: 5.6rem;
-  height: 3.1rem;
-  background-color: var(--toggle-off-color);
-  border-radius: 5rem;
-  transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	width: 5.6rem;
+	height: 3.1rem;
+	background-color: var(--toggle-off-color);
+	border-radius: 5rem;
+	transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .toggleHandler {
-  background-color: var(--white);
-  border-radius: 5rem;
-  box-shadow: 0 2px 6px var(--gray-dark);
-  display: inline-block;
-  height: 2.7rem;
-  left: -1.3rem;
-  position: relative;
-  top: 0.2rem;
-  transform: rotate(-45deg);
-  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  width: 2.7rem;
-  z-index: 1;
+	background-color: var(--white);
+	border-radius: 5rem;
+	box-shadow: 0 2px 6px var(--gray-dark);
+	display: inline-block;
+	height: 2.7rem;
+	left: -1.3rem;
+	position: relative;
+	top: 0.2rem;
+	transform: rotate(-45deg);
+	transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	width: 2.7rem;
+	z-index: 1;
 }
 
 .toggleInput:checked {
-  + .toggleLabel {
-    background-color: var(--toggle-on-color);
+	+ .toggleLabel {
+		background-color: var(--toggle-on-color);
 
-    &:before {
-      color: var(--toggle-on-color);
-    }
+		&:before {
+			color: var(--toggle-on-color);
+		}
 
-    &:after {
-      color: var(--toggle-off-color);
-    }
+		&:after {
+			color: var(--toggle-off-color);
+		}
 
-    .toggleHandler {
-      background-color: var(--white);
-      transform: translate3d(2.55rem, 0, 0) rotate(0);
-    }
-  }
+		.toggleHandler {
+			background-color: var(--white);
+			transform: translate3d(2.55rem, 0, 0) rotate(0);
+		}
+	}
 }
