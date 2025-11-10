@@ -1,5 +1,6 @@
 :root {
 	--black: #1f1e29;
+	--black-opacity-10: #1f1e291a;
 	--blue: #7ab7d4;
 	--blue-dark: #6fa7c2;
 	--gray: #e3e1e2;
@@ -9,17 +10,10 @@
 	--purple: #7571a8;
 	--purple-dark: #6b679a;
 	--white: #f8f6f7;
+	--white-opacity-10: #f8f6f71a;
+
+	--border-radius: 1rem;
 
 	--toggle-on-color: var(--green);
 	--toggle-off-color: var(--gray-dark);
-
-	[data-theme="dark"] {
-		--background-color: var(--black);
-		--font-body-color: var(--white);
-	}
-
-	[data-theme="light"] {
-		--background-color: var(--white);
-		--font-body-color: var(--black);
-	}
 }

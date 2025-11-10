@@ -8,10 +8,11 @@ body {
 .content {
 	background-color: var(--background-color);
 	display: flex;
-	min-height: 100vh;
-	line-height: 1.1;
 	flex-direction: column;
 	justify-content: center;
+	line-height: 1.1;
+	min-height: 100vh;
+	position: relative;
 }
 
 .content h1 {

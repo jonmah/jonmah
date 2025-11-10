@@ -1,8 +1,11 @@
 import { useState } from 'react';
 
 import Toggle from './components/form/Toggle/Toggle';
+import Taskbar from './components/Taskbar/Taskbar';
 import './App.css';
 import './styles/variables.css';
+import './styles/theme-dark.css';
+import './styles/theme-light.css';
 
 export default function App() {
 	const [isDarkMode, setIsDarkMode] = useState(true);
@@ -20,6 +23,7 @@ export default function App() {
 				testIdPrefix="App-theme"
 			/>
 			<p>Please listen</p>
+			<Taskbar />
 		</div>
 	);
 }

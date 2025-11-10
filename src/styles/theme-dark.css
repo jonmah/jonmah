@@ -1,0 +1,6 @@
+[data-theme="dark"] {
+	--background-color: var(--black);
+	--font-body-color: var(--white);
+
+	--taskbar-background-color: var(--white-opacity-10);
+}

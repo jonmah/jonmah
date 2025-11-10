@@ -1,0 +1,6 @@
+[data-theme="light"] {
+	--background-color: var(--white);
+	--font-body-color: var(--black);
+
+	--taskbar-background-color: var(--black-opacity-10);
+}
