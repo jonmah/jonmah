@@ -44,3 +44,5 @@ export default function Toggle({
 		</>
 	);
 }
+
+Toggle.displayName = 'Toggle';

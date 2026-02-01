@@ -15,15 +15,15 @@ export default function App() {
 	};
 
 	return (
-		<div className="content" data-theme={isDarkMode ? 'dark' : 'light'}>
+		<main className="content" data-theme={isDarkMode ? 'dark' : 'light'}>
 			<h1>Jon</h1>
 			<Toggle
 				handleToggle={handleIsDarkModeToggle}
 				isOn={isDarkMode}
-				testIdPrefix="App-theme"
+				testIdPrefix="app-theme-toggle"
 			/>
 			<p>Please listen</p>
 			<Taskbar />
-		</div>
+		</main>
 	);
 }
