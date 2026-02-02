@@ -1,0 +1,11 @@
+.button {
+	background-color: transparent;
+	border: none;
+
+	svg {
+		aspect-ratio: 1 / 1;
+		fill: red;
+		height: 1.75rem;
+		stroke: blue;
+	}
+}
