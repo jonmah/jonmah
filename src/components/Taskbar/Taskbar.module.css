@@ -1,15 +1,16 @@
 .taskbar {
-	--taskbar-height: 3rem;
+	--taskbar-height: 2.5rem;
+	--taskbar-radius: 1rem;
 
 	align-items: center;
 	background-color: var(--taskbar-background-color);
-	border-radius: var(--taskbar-height);
+	border-radius: var(--taskbar-radius);
 	bottom: 1rem;
 	display: flex;
 	gap: 0.25rem;
 	left: 50%;
 	max-width: 100%;
-	padding: 1rem;
+	padding: 0 0.5rem;
 	position: fixed;
 	transform: translateX(-50%);
 	height: var(--taskbar-height);

@@ -1,5 +1,6 @@
-import { ReactComponent as SettingsIcon } from '../../assets/svg/settings.svg';
+import { ReactComponent as AppsIcon } from '../../assets/svg/apps.svg';
 import { ReactComponent as FolderIcon } from '../../assets/svg/folder.svg';
+import { ReactComponent as SettingsIcon } from '../../assets/svg/settings.svg';
 import styles from './Taskbar.module.css';
 import TaskbarIcon from './TaskbarIcon';
 
@@ -12,9 +13,14 @@ export default function Taskbar() {
 				onClick={() => console.log('open settings modal')}
 			/>
 			<TaskbarIcon
+				icon={AppsIcon}
+				title="Apps"
+				onClick={() => console.log('toggle apps')}
+			/>
+			<TaskbarIcon
 				icon={FolderIcon}
-				title="Purple Potion"
-				onClick={() => console.log('toggle purple potion')}
+				title="Folder"
+				onClick={() => console.log('toggle folder')}
 			/>
 		</aside>
 	);

@@ -4,8 +4,8 @@
 
 	svg {
 		aspect-ratio: 1 / 1;
-		fill: red;
+		fill: white;
 		height: 1.75rem;
-		stroke: blue;
+		/* stroke: white; */
 	}
 }
